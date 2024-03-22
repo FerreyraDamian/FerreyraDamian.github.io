@@ -1,11 +1,15 @@
-function getMail() {
-    // Get the text field
-    var copyText = document.getElementById("Mail");
-    // Select the text field
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); // For mobile devices
-    // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
-    // Alert the copied text
-    alert("Copied the text: " + copyText.value);
+function copyText(htmlElement) {
+    if (!htmlElement) {
+        return;
+    }
+    let elementText = htmlElement.innerText;
+    let inputElement = document.createElement("input");
+    inputElement.setAttribute("value", elementText);
+    document.body.appendChild(inputElement);
+    inputElement.select();
+    document.execCommand("copy");
+    inputElement.parentNode.removeChild(inputElement);
 }
+document.querySelector("#Mail").onclick = function() {
+    copyText(document.querySelector("#Mail"))
+}            

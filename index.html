@@ -8,10 +8,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-    <header>
-
+    <header class="header">
+        <div>Aquí va el header</div>
     </header>
-    <script src="scripts.js"></script>
+    <section class="section" id="sobreMi">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-magnifying-glass"></i> Damián Ferreyra</h2>
+        </div>
+        <div class="section-container">
+            <div class="center-block">
+                <p>Aquí va mi descripción</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="proyectos">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-code-branch"></i> Proyectos recientes</h2>
+        </div>
+        <div class="section-container">
+            <div class="center-block">
+                <p>Aquí va la descripción de un proyecto</p>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="center-block">
+                <p>Aquí va la descripción de un proyecto</p>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="center-block">
+                <p>Aquí va la descripción de un proyecto</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="tecnologias">
+        <div class="section-title">
+            <h2><i class="fa-solid fa-code"></i> Tecnologías</h2>
+        </div>
+        <div class="section-container">
+            <div class="center-block">
+                <i class="fa-brands fa-python"></i>
+                Python
+            </div>
+            <div class="center-block">
+                <i class="fa-brands fa-java"></i>
+                Java
+            </div>
+        <div class="section-container">
+            <div class="center-block">
+                <i class="fa-brands fa-js"></i>
+                JavaScript
+            </div>
+            <div class="center-block">
+                <i class="fa-brands fa-php"></i>
+                <i class="fa-solid fa-database"></i>
+                PHP + MySQL
+            </div>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <div class="footer-row">
@@ -35,19 +89,17 @@
                 <div class="footer-links">
                     <h4>Correo</h4>
                     <ul>
-                        <li><a href="mailto:ferreyradamian3755@gmail.com">Enviar correo</a></li>
-                        <li>
-                            <input type="text" value="Hello World" id="myInput">
-                            <button onclick="getMail()">Copy text</button>
-                        </li>
+                        <li><button class="button" id="Mail">ferreyradamian3755@gmail.com</p></li>
+                        <li><a id="mailTo" href="mailto:ferreyradamian3755@gmail.com">Enviar correo</a></li>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="message">
-                <h4>Copyright ©2024; Designed by KATO</h4>
+                <h4>Copyright ©2024; Designed by Damián Ferreyra</h4>
             </div>
         </div>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
