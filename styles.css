@@ -5,9 +5,59 @@
     list-style: none;
 }
 
+header {
+    text-align: center;
+    font-size: 30px;
+    width: auto;
+    flex: auto;
+    flex-wrap: auto;
+    background-image: url(/images/winter-scapes.jpg);
+    padding: 20px 0px 20px 0px;
+}
+
+.header-button {
+    background-color:#050505;
+    font-size: 30px;
+    border: #00c3ff 1px solid;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+
+.header-button:hover {
+    cursor: pointer;
+}
+
+.header-hyperlink {
+    color:white;
+    text-decoration: none;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
 body {
     font-family: sans-serif;
-    text-transform: capitalize;
+    background-color: #090909;
+    color: whitesmoke;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row p {
+    text-align:justify;
 }
 
 .section h2 {
@@ -23,16 +73,14 @@ body {
     height: auto;
 }
 
-.center-block {
-    position:relative;
-    max-width: 150px;
-    align-items:flex-end;
-    display:inline-block;
-    text-align:center;
+.text h4 {
+    color:white;
+    font-size:20px;
 }
 
-.section-container {
-    margin: 0 auto;
+.text p {
+    color:whitesmoke;
+    font-size: 16px;
 }
 
 footer {
@@ -73,6 +121,14 @@ footer {
 .footer-links ul li a:hover {
     color: #ffffff;
     padding-left: 6px;
+}
+
+.footer-text {
+    color: #bbbbbb;
+    padding-bottom: 6px;
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 14px;
 }
 
 .social-link a {
@@ -127,8 +183,11 @@ footer {
     padding: 1px 1px 1px 1px;
 }
 
+
 .button:hover {
     cursor: pointer;
+    color: whitesmoke;
+    border: 1px solid #bbbbbb;
 }
 
 #mailTo {

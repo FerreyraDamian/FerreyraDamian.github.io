@@ -6,67 +6,94 @@
     <title>KatoWeb</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.0/css/flag-icons.min.css">
 </head>
 <body>
-    <header class="header">
-        <div>Aquí va el header</div>
-    </header>
-    <section class="section" id="sobreMi">
-        <div class="section-title">
-            <h2><i class="fa-solid fa-magnifying-glass"></i> Damián Ferreyra</h2>
+    <header class="header" id="myHeader">
+        <div class="container">
+            <div class="header-row">
+                <div class="d-flex justify-content-center">
+                    <button class="header-button"><a href="#proyectos" class="header-hyperlink">Proyectos</a></button>
+                    <button class="header-button"><a href="#sobreMi" class="header-hyperlink">Sobre mí</a></button>
+                    <button class="header-button"><a href="#footer" class="header-hyperlink">Contacto</a></button>
+                </div>
+            </div>
         </div>
-        <div class="section-container">
-            <div class="center-block">
-                <p>Aquí va mi descripción</p>
+    </header>
+<!--Sobre mí-->
+    <section class="section" id="sobreMi">    
+    <div class="section-title">
+        <h2><i class="fa-solid fa-magnifying-glass"></i> Damián Ferreyra</h2>
+    </div>
+        <div class="containter">
+            <div class="row">
+                <div class="section">
+                    <div class="text">
+                        <h4>Nacionalidad y residencia</h4>
+                        <p><span class="fi fi-ar"></span> Argentina</p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="text">
+                        <h4>Historia</h4>
+                        <p>Comenzó en la secundaria, con un curso de G-Code donde descubrí la informática a fondo. Ya había escuchado de Java por Minecraft en muchos foros. Me gustó tanto el curso de CNC que tomé un curso de FrontEnd para complementarlo. Años más tarde, en la universidad me vi frustrado a causa de ver un lenguaje descontinuado hoy en día como es Pascal por lo que mi vida fue al rumbo de estudiar otras ciencias. Luego de explorar muchos campos, en 2024 me decidí a dedicarme Full-Time a programar y terminar mi carrera de grado.</p>
+                    </div>
+                    <div class="image">
+                        <img src="/images/g-code.jpg" alt="G-code img" width="300px">
+                        <h4>¡Hola, soy un ejemplo de G-Code! :)</h4>
+                        <p>¡Me utilizan en máquinas CNC desde 1958! <a href="https://gcodetutor.com/gcode-tutorial/history-of-gcode.html#:~:text=The%20birth%20of%20G%2DCode&text=This%20is%20possibly%20the%20oldest,)%20was%20invented%2C%20in%201958."><i class="fa-brands fa-wikipedia-w"></i></a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+<!--Proyectos-->
     <section class="section" id="proyectos">
         <div class="section-title">
-            <h2><i class="fa-solid fa-code-branch"></i> Proyectos recientes</h2>
+            <h2><i class="fa-solid fa-code-branch"></i> Proyectos</h2>
         </div>
-        <div class="section-container">
-            <div class="center-block">
-                <p>Aquí va la descripción de un proyecto</p>
+        <div class="container">
+            <div class="row">
+                <div class="section">
+                    <p>Aquí va la descripción de un proyecto</p>
+                </div>
+                <div class="section">
+                    <p>Aquí va la descripción de un proyecto</p>
+                </div>
+                <div class="section">
+                    <p>Aquí va la descripción de un proyecto</p>
+                </div>
             </div>
-        </div>
-        <div class="section-container">
-            <div class="center-block">
-                <p>Aquí va la descripción de un proyecto</p>
-            </div>
-        </div>
-        <div class="section-container">
-            <div class="center-block">
-                <p>Aquí va la descripción de un proyecto</p>
-            </div>
-        </div>
+<!--Tecnologías que uso-->
     </section>
     <section class="section" id="tecnologias">
         <div class="section-title">
             <h2><i class="fa-solid fa-code"></i> Tecnologías</h2>
         </div>
-        <div class="section-container">
-            <div class="center-block">
-                <i class="fa-brands fa-python"></i>
-                Python
-            </div>
-            <div class="center-block">
-                <i class="fa-brands fa-java"></i>
-                Java
-            </div>
-        <div class="section-container">
-            <div class="center-block">
-                <i class="fa-brands fa-js"></i>
-                JavaScript
-            </div>
-            <div class="center-block">
-                <i class="fa-brands fa-php"></i>
-                <i class="fa-solid fa-database"></i>
-                PHP + MySQL
-            </div>
-        </div>
+        <div class="container">
+            <div class="row">
+                <div class="section">
+                    <h4>FrontEnd</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-js"></i>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h4>BackEnd</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-python"></i>Python</li>
+                        <li><i class="fa-brands fa-java"></i>Java</li>
+                    </ul>
+                </div>
+                <div class="section">
+                    <h4>Bases de datos</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-php"></i><i class="fa-solid fa-database"></i>PHP + MySQL</li>
+                    </ul>
+                </div>
     </section>
-    <footer class="footer">
+<!--Footer-->
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-row">
                 <div class="footer-links">
@@ -89,6 +116,7 @@
                 <div class="footer-links">
                     <h4>Correo</h4>
                     <ul>
+                        <li><p class="footer-text">¡Copia-Click!</p></li>
                         <li><button class="button" id="Mail">ferreyradamian3755@gmail.com</p></li>
                         <li><a id="mailTo" href="mailto:ferreyradamian3755@gmail.com">Enviar correo</a></li>
                 </div>
