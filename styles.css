@@ -54,33 +54,59 @@ body {
 .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
 }
 
 .row p {
     text-align:justify;
 }
 
+.section {
+    padding: 15px 0px 15px 0px;
+}
+
 .section h2 {
-    margin: 0 auto;
-    max-width: 1200px;
     text-align:center;
     font-size: 32px;
+}
+
+.column {
+    padding: 5px 5px 5px 5px;
+    flex: 50%;
+}
+
+.column h4 {
+    color:white;
+    font-size:20px;
+}
+
+.column p {
+    color:whitesmoke;
+    font-size: 16px;
+}
+
+.column_img {
+    display: block;
+    margin: auto;
+}
+
+.column_text {
+    display:block;
+    margin:auto;
+    text-align: center;
+    width:100%
+}
+
+#wikimage {
+    border: 1px solid;
+    border-radius: 3px;
+    color: #cf15c0;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     height: auto;
-}
-
-.text h4 {
-    color:white;
-    font-size:20px;
-}
-
-.text p {
-    color:whitesmoke;
-    font-size: 16px;
 }
 
 footer {
