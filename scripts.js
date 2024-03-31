@@ -13,8 +13,8 @@ function copyText(htmlElement) {
 document.querySelector("#Mail").onclick = function() {
     let mail="ferreyradamian3755@gmail.com"
     copyText(document.querySelector("#Mail"))
-    alert("Correo copiado a tu portapapeles")
-}            
+    alert("Mail copied to your clipboard")
+}    
 
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};

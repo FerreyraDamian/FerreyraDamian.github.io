@@ -46,7 +46,7 @@ header {
     padding-left: 0;
     left: 0;
     display: none;
-    background: white;
+    background:  #eee;
 }
 
 .lang ul li:hover > ul, ul li ul:hover {
@@ -98,7 +98,7 @@ text-decoration: none;
 }
 
 .header-hyperlink {
-    color:white;
+    color: #eee;
     text-decoration: none;
 }
 
@@ -123,13 +123,18 @@ text-decoration: none;
 body {
     font-family: sans-serif;
     background-color: #090909;
-    color: whitesmoke;
+    color: #bbb;
+}
+
+body h6 {
+    color: #eee;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 10px 10px 10px 10px;
 }
 
 .row p {
@@ -137,12 +142,13 @@ body {
 }
 
 .section {
-    padding: 15px 0px 15px 0px;
+    padding: 20px 15% 20px 15%;
 }
 
 .section h2 {
     text-align:center;
     font-size: 32px;
+    color:#eee;
 }
 
 .column {
@@ -151,12 +157,13 @@ body {
 }
 
 .column h4 {
-    color:white;
+    color:#eee;
     font-size:20px;
+    padding-bottom: 5px;
 }
 
 .column p {
-    color:whitesmoke;
+    color: #bbb;
     font-size: 16px;
 }
 
@@ -178,13 +185,13 @@ body {
 }
 
 .column-33 h4 {
-    color:white;
+    color: #eee;
     font-size:20px;
     text-align: center;
 }
 
 .column-33 p {
-    color:whitesmoke;
+    color: #bbb;
     font-size: 16px;
     text-align:center;
 }
@@ -204,7 +211,7 @@ body {
 
 footer {
     background-color: #000000;
-    padding: 60px 0;
+    padding-top: 35px;
 }
 
 .footer-row {
@@ -305,7 +312,7 @@ footer {
 
 .button:hover {
     cursor: pointer;
-    color: whitesmoke;
+    color:  #bbb;
     border: 1px solid #bbbbbb;
 }
 
