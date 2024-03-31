@@ -1,0 +1,43 @@
+body {
+    background-image: url(fondo_página.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+* {
+    color: black
+}
+
+h1 {
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 150;
+    font-weight: 500;
+    background-image: url(fondo_título.jpg) ;
+    border: solid 2px black;
+    padding: 4px;
+    margin: 40px;
+}
+
+h2 {
+    color: red;
+    background-color: cadetblue;
+}
+
+#parragraph1 {
+    color: green
+}
+
+.negro {
+    color: black
+}
+
+#p1 {
+    color: black;
+    background-color: blue;
+}
+
+#p2 {
+    color: cornsilk;
+    background-color: chartreuse;
+}
