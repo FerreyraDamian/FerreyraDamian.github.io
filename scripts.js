@@ -33,3 +33,8 @@ function myFunction() {
         header.classList.remove("sticky");
     }
 }
+
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+    document.body.classList.toggle("dark")
+})
