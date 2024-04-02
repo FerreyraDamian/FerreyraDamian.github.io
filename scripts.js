@@ -34,7 +34,13 @@ function myFunction() {
     }
 }
 
-const checkbox = document.getElementById("checkbox")
+const checkbox = document.getElementById("checkbox");
+
 checkbox.addEventListener("change", () => {
-    document.body.classList.toggle("dark")
-})
+    document.body.classList.toggle("dark");
+    var sections = document.getElementsByClassName('section');
+    var seclen = sections.length;
+    for(var i = 0; i <= seclen; i++) {
+        sections[i].className = "sectiongray";
+    }
+});

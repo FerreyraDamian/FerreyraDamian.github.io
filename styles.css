@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    box-sizing: border-box;
 }
 
 header {
@@ -15,7 +16,37 @@ header {
     padding: 20px 0px 20px 0px;
 }
 
-.lang ul li {
+.dark .support a {
+    color: #fff;
+}
+
+.dark {
+    color:white;
+    background-color: rgb(10, 10, 10);
+}
+
+.sectiongray {
+    background-color: #000000;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: white;
+    color: black;
+    transition: background 0.5s linear;
+}
+
+body h1, h2, h3, h4, h5, h6 {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#lang {
+    padding: 0px 0px 0px 0px;
+    float: left;
+}
+
+#lang ul li {
     list-style: none;
     margin: 0 auto;
     border-left: 2px solid #3ca0e7;
@@ -27,29 +58,31 @@ header {
     font-family: arvo;
 }
 
-.lang li a {
+#lang li a {
     color: black;
 }
 
-.lang li a:hover {
+#lang li a:hover {
     color: #3ca0e7;
 }
 
-.lang li:hover {
+#lang li:hover {
     cursor: pointer;
 }
 
-.lang ul li ul {
+#lang ul li ul {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     padding-left: 0;
     left: 0;
     display: none;
-    background:  #eee;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px #3ca0e7 solid;
+    border-radius: 12px;
 }
 
-.lang ul li:hover > ul, ul li ul:hover {
+#lang ul li:hover > ul, ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
@@ -59,7 +92,7 @@ header {
     box-shadow: 0px 3px 5px -1px #ccc;
 }
 
-.lang ul li ul li {
+#lang ul li ul li {
     clear: both;
     width: 100%;
     text-align: left;
@@ -67,14 +100,13 @@ header {
     border-style: none;
 }
 
-.lang ul li ul li a:hover {
+#lang ul li ul li a:hover {
 padding-left: 10px;
 border-left: 2px solid black;
 transition: all 0.3s ease;
 }
 
-
-.lang a {
+#lang a {
 
 text-decoration: none;
 
@@ -83,7 +115,6 @@ text-decoration: none;
 }
 
 }
-
 
 .header-button {
     background-color:#050505;
@@ -114,25 +145,6 @@ text-decoration: none;
     padding-top: 102px;
 }
 
-.lang {
-    padding: 0px 0px 0px 0px;
-    float: left;
-}
-
-
-body {
-    font-family: sans-serif;
-    background-color: #090909;
-    color: #bbb;
-    transition: background 0.2s linear;
-}
-
-body h6 {
-    color: #eee;
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -142,14 +154,27 @@ body h6 {
     text-align:justify;
 }
 
+#background {
+    padding: 0px 15% 0px 15%;
+}
+
 .section {
-    padding: 20px 15% 20px 15%;
+    background-color: whitesmoke;
+    padding: 15px 40px 15px 40px;
 }
 
 .section h2 {
     text-align:center;
     font-size: 32px;
-    color:#eee;
+}
+
+.sectiongray {
+    padding: 15px 40px 15px 40px;
+}
+
+.sectiongray h2 {
+    text-align:center;
+    font-size: 32px;
 }
 
 .column {
@@ -158,13 +183,11 @@ body h6 {
 }
 
 .column h4 {
-    color:#eee;
     font-size:20px;
     padding-bottom: 5px;
 }
 
 .column p {
-    color: #bbb;
     font-size: 16px;
 }
 
@@ -186,13 +209,11 @@ body h6 {
 }
 
 .column-33 h4 {
-    color: #eee;
     font-size:20px;
     text-align: center;
 }
 
 .column-33 p {
-    color: #bbb;
     font-size: 16px;
     text-align:center;
 }
@@ -227,7 +248,6 @@ footer {
 
 .footer-links h4 {
     font-size: 20px;
-    color: #ffffff;
     margin-bottom: 25px;
     font-weight: 500;
     border-bottom: 2px solid #00c3ff;
@@ -238,7 +258,6 @@ footer {
 .footer-links ul li a {
     font-size: 18px;
     text-decoration: none;
-    color: #bbbbbb;
     display:block;
     margin-bottom: 15px;
     transition: all .3s ease;
@@ -246,12 +265,10 @@ footer {
 }
 
 .footer-links ul li a:hover {
-    color: #ffffff;
     padding-left: 6px;
 }
 
 .footer-text {
-    color: #bbbbbb;
     padding-bottom: 6px;
     display: inline-block;
     margin-bottom: 6px;
@@ -262,12 +279,10 @@ footer {
     display: inline-block;
     min-height: 40px;
     width: 40px;
-    background-color: rgba(255,255,255,0.2);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
     transition: all .5s ease;
 }
 
@@ -288,7 +303,6 @@ footer {
 
 .message h4 {
     font-size: 15px;
-    color: #ffffff;
     margin-bottom: 25px;
     font-weight: 500;
     border-bottom: 2px solid #00c3ff;
@@ -313,7 +327,6 @@ footer {
 
 .button:hover {
     cursor: pointer;
-    color:  #bbb;
     border: 1px solid #bbbbbb;
 }
 
@@ -321,49 +334,36 @@ footer {
     padding-top: 10px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-* {box-sizing: border-box;}
-
-body.dark {background-color: #292c35;} /* #9b59b6 */
-
-body.dark h1, body.dark .support a {color: #fff;}
-
 .checkbox {
-  opacity: 0;
-  position: absolute;
+    opacity: 0;
+    position: absolute;
 }
 
 .checkbox-label {
-  background-color: #111;
-  width: 50px;
-  height: 26px;
-  border-radius: 50px;
-  position: relative;
-  padding: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.fa-moon {color: #f1c40f;}
-
-.fa-sun {color: #f39c12;}
-
 .checkbox-label .ball {
-  background-color: #fff;
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  border-radius: 50%;
-  transition: transform 0.2s linear;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(24px);
+    transform: translateX(24px);
 }
 
 .ldbutton {
