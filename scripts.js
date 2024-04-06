@@ -36,22 +36,16 @@ function myFunction() {
 
 const checkbox = document.getElementById("checkbox");
 
-dark = false
 checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark");
-    if (dark == false) {
-        var sections = document.getElementsByClassName('section');
-        var seclen = sections.length;
-        for(var i = 0; i <= seclen; i++) {
-            sections[i].className = "sectiongray";
-        }
-        dark = true
-    } else {
-        var sectionsdark = document.getElementsByClassName('sectiongray');
-        var seclendark = sectionsdark.length;
-        for(var i = 0; i <= seclendark; i++) {
-            sectionsdark[i].className = "section";
-        }
-        dark = false
+    var sections = document.getElementsByClassName('section');
+    var seclen = sections.length;
+    console.log(seclen);
+    console.log(sections[0]);
+    console.log(sections[1]);
+    console.log(sections[2]);
+    for(var i = 0; i <= seclen-1; i++) {
+        sections[i].className = "sectiongray";
+        console.log(i)
     }
 });
