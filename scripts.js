@@ -44,20 +44,26 @@ checkbox.addEventListener("change", () => {
     let headerg = document.getElementsByClassName("headerg");
     let sections = document.getElementsByClassName("section");
     let sectionsg = document.getElementsByClassName("sectiongray");
+    let button = document.getElementsByClassName("header-button");
+    let buttong = document.getElementsByClassName("header-buttong");
     if (sections.length > 0) {
         for (let i=0; sections.length > i; i) {
             sections[i].className = "sectiongray";
-            console.log(i);
         }
         footer[0].className = "footerg";
         header[0].className = "headerg";
+        for (let i=0; button.length > i; i) {
+            button[i].className = "header-buttong";
+        }
     } else {
         for (let i=0; sectionsg.length > i; i) {
             sectionsg[i].className = "section";
-            console.log(i);
         }
         footerg[0].className = "footer";
         headerg[0].className = "header";
+        for (let i=0; buttong.length > i; i) {
+            buttong[i].className = "header-button";
+        }
     }
 });
 

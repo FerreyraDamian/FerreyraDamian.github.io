@@ -20,10 +20,6 @@ header {
     background-color: black;
 }
 
-.headerg p, li, button {
-    color:white
-}
-
 .headerg i {
     color:#00c3ff
 }
@@ -130,7 +126,24 @@ text-decoration: none;
     font-size: 30px;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
+    background-color: white;
 }
+
+.header-button a {
+    color:black;
+}
+
+.header-buttong {
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+}
+
+.header-buttong a {
+    color:white;
+}
+
 
 .header-button:hover {
     cursor: pointer;
