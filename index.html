@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/7.2.0/css/flag-icons.min.css">
 </head>
+
 <body>
     <header class="header" id="myHeader">
         <div id="lang">
@@ -29,144 +31,167 @@
             <label for="checkbox" class="checkbox-label">
                 <i class="fa-solid fa-moon"></i>
                 <i class="fa-solid fa-sun" id="sun"></i>
-            <span class="ball"></span>
+                <span class="ball"></span>
             </label>
         </div>
         <div class="container">
             <div class="header-row">
                 <div class="d-flex justify-content-center">
-                    <button onclick="clear_click()" class="header-button"><a href="#proyectos" class="header-hyperlink">Projects</a></button>
-                    <button onclick="clear_click()" class="header-button"><a href="#sobreMi" class="header-hyperlink">About me</a></button>
-                    <button onclick="clear_click()" class="header-button"><a href="#footer" class="header-hyperlink">Contact</a></button>
+                    <button onclick="clear_click()" class="header-button"><a href="#proyectos"
+                            class="header-hyperlink">Projects</a></button>
+                    <button onclick="clear_click()" class="header-button"><a href="#sobreMi"
+                            class="header-hyperlink">About me</a></button>
+                    <button onclick="clear_click()" class="header-button"><a href="#footer"
+                            class="header-hyperlink">Contact</a></button>
                 </div>
             </div>
         </div>
     </header>
-<div id="background">
-<!--Sobre mí-->
-    <section class="section" id="sobreMi">    
-        <div class="section-title">
-            <h2><i class="fa-solid fa-magnifying-glass"></i> Damián Ferreyra</h2>
-        </div>
-        <div class="containter">
-            <div class="row">
-                <div class="column">
-                    <h4>Nacionality and residency</h4>
-                    <p><i class="fi fi-ar"></i> Argentina - (2002-Now)</p>
-                    <p><i class="fi fi-us"></i> United States - (Next target location)</p>
+    <div id="background">
+        <!--Sobre mí-->
+        <section class="section" id="sobreMi">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-magnifying-glass"></i> Damián Ferreyra</h2>
+            </div>
+            <div class="containter">
+                <div class="row">
+                    <div class="column">
+                        <h4>Nacionality and residency</h4>
+                        <p><i class="fi fi-ar"></i> Argentina - (2002-Now)</p>
+                        <p><i class="fi fi-us"></i> United States - (Next target location)</p>
+                    </div>
+                    <div class="column">
+                        <img class="column_img" src="images/arg_flag.jpg" alt="argentina flag" width="300px">
+                    </div>
                 </div>
-                <div class="column">
-                    <img class="column_img" src="images/arg_flag.jpg" alt="argentina flag" width="300px">
+                <div class="row">
+                    <div class="column">
+                        <h4>Why do I code?</h4>
+                        <p>When I was in highschool, with a G-Code course I dicovered computing. But I had heard about
+                            that Minecraft was programmed in Java while playing it. After that, in 2020, I have taken a
+                            FrontEnd introduction course and I maked <a href="/myFirstWeb/index.html"
+                                class="hyperlink">my first web</a>. Years later, University was not for me when we taked
+                            TurboPascal by the first programming language but two years later I decided to better get my
+                            diploma soon while I spend my time programming.</p>
+                    </div>
+                    <div class="column">
+                        <img class="column_img" src="/images/g-code.jpg" alt="G-code img" width="300px">
+                        <h4 class="column_text">¡Say Hi, I'm G-Code! :)</h4>
+                        <h5 class="column_text">¡They use me in CNC machines since 1958! <a
+                                href="https://gcodetutor.com/gcode-tutorial/history-of-gcode.html#:~:text=The%20birth%20of%20G%2DCode&text=This%20is%20possibly%20the%20oldest,)%20was%20invented%2C%20in%201958."
+                                class="hyperlink"><i id="wikimage" class="fa-brands fa-wikipedia-w"></i></a></h5>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="column">
-                    <h4>Why do I code?</h4>
-                    <p>When I was in highschool, with a G-Code course I dicovered computing. But I had heard about that Minecraft was programmed in Java while playing it. After that, in 2020, I have taken a FrontEnd introduction course and I maked <a href="/myFirstWeb/index.html" class="hyperlink">my first web</a>. Years later, University was not for me when we taked TurboPascal by the first programming language but two years later I decided to better get my diploma soon while I spend my time programming.</p>
-                </div>
-                <div class="column">
-                    <img class="column_img" src="/images/g-code.jpg" alt="G-code img" width="300px">
-                    <h4 class="column_text">¡Say Hi, I'm G-Code! :)</h4>
-                    <h5 class="column_text">¡They use me in CNC machines since 1958! <a href="https://gcodetutor.com/gcode-tutorial/history-of-gcode.html#:~:text=The%20birth%20of%20G%2DCode&text=This%20is%20possibly%20the%20oldest,)%20was%20invented%2C%20in%201958." class="hyperlink"><i id="wikimage" class="fa-brands fa-wikipedia-w"></i></a></h5>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--Tecnologías que uso-->
-    <section class="section" id="tecnologias">
-        <div class="section-title">
-            <h2><i class="fa-solid fa-code"></i> Software</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column-33">
-                    <h4>FrontEnd</h4>
-                    <ul>
-                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                    </ul>
-                </div>
-                <div class="column-33">
-                    <h4>BackEnd</h4>
-                    <ul>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-java"></i> Java</li>
-                    </ul>
-                </div>
-                <div class="column-33">
-                    <h4>FrameWorks</h4>
-                    <ul>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-<!--Proyectos-->
-    <section class="section" id="proyectos">
-        <div class="section-title">
-            <h2><i class="fa-solid fa-code-branch"></i> Projects</h2>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column-33">
-                    <h4>Nuntius</h4>
-                    <h6>What is it?</h6>
-                    <p>Nuntius is a discord bot that collects the latest news in a personalized way to redirect them to text channels.</p>
-                    <h6>Why?</h6>
-                    <p>It was born out of the need to have a productive and comfortable way to access information in the shortest time possible.</p>
-                    <h6>Can I collaborate?</h6>
-                    <p>Yes, actually it is an open-source project.<a href="https://github.com/KatoDF/NuntiusBOT"><i class="fa-solid fa-diamond-turn-right"></i></a></p>
-                </div>
-                <div class="column-33">
-                    <h4>Hey! I'm the title's project</h4>
-                    <p><img src="https://i.imgflip.com/8l4guv.jpg" width=50% /> </p>
-                </div>
-                <div class="column-33">
-                    <h4>Hey! I'm the title's project</h4>
-                    <p><img src="https://i.imgflip.com/8l4guv.jpg" width=50% /> </p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-<!--Footer-->
-<footer class="footer" id="footer">
-    <div class="container">
-        <div class="footer-row">
-            <div class="footer-links">
-                <h4>Work</h4>
-                <ul>
-                    <li><a href="#">Work experience</a></li>
-                    <li><a href="#">My services</a></li>
-                    <li><a href="#">Terms and conditions</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Social media</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/dami%C3%A1n-ferreyra-b2453828a/"><i class="fab fa-linkedin"> LI</i></a></li>
-                    <li><a href="https://twitter.com/DFKato"><i class="fab fa-twitter"> X</i></a></li>
-                    <li><a href="https://github.com/KatoDF"><i class="fab fa-github"> GH</i></a></li>
-                    <li><a href="https://discord.com/users/1088883078405038151"><i class="fab fa-discord"> Dc</i></a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Mail</h4>
-                <ul>
-                    <li><p class="footer-text">¡Copy-paste!</p></li>
-                    <li><button class="button" id="Mail">ferreyradamian3755@gmail.com</p></li>
-                    <li><a id="mailTo" href="mailto:ferreyradamian3755@gmail.com">Send mail</a></li>
+        </section>
+        <!--Tecnologías que uso-->
+        <section class="section" id="tecnologias">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-code"></i> Tech I use</h2>
             </div>
             <div class="container">
-                <div class="message">
-                    <h4>Copyright ©2024; Designed by Damián Ferreyra</h4>
+                <div class="row">
+                    <div class="column-33">
+                        <h4>FrontEnd</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-js"></i><i class="fa-brands fa-html5"></i><i
+                                    class="fa-brands fa-css3-alt"></i> JS+HTML+CSS</li>
+                        </ul>
+                    </div>
+                    <div class="column-33">
+                        <h4>BackEnd</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-brands fa-java"></i> Java</li>
+                            <li><i class="fa-brands fa-php"></i><i class="fa-solid fa-server"></i> PHP+MySQL
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-33">
+                        <h4>FrameWorks</h4>
+                        <ul>
+                            <li><i class="fa-brands fa-node"></i> NodeJS</li>
+                            <li><i class="fa-brands fa-react"></i> ReactJS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Proyectos-->
+        <section class="section" id="proyectos">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-code-branch"></i> Projects</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="column-33">
+                        <h4>Nuntius</h4>
+                        <h6>What is it?</h6>
+                        <p>Nuntius is a discord bot that collects the latest news in a personalized way to redirect them
+                            to text channels.</p>
+                        <h6>Why?</h6>
+                        <p>It was born out of the need to have a productive and comfortable way to access information in
+                            the shortest time possible.</p>
+                        <h6>Can I collaborate?</h6>
+                        <p>Yes, actually it is an open-source project.<a href="https://github.com/KatoDF/NuntiusBOT"><i
+                                    class="fa-solid fa-diamond-turn-right"></i></a></p>
+                    </div>
+                    <div class="column-33">
+                        <h4>Hey! I'm the title's project</h4>
+                        <p><img src="https://i.imgflip.com/8l4guv.jpg" width=50% /> </p>
+                    </div>
+                    <div class="column-33">
+                        <h4>Hey! I'm the title's project</h4>
+                        <p><img src="https://i.imgflip.com/8l4guv.jpg" width=50% /> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--Footer-->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Work</h4>
+                    <ul>
+                        <li><a href="#">Work experience</a></li>
+                        <li><a href="#">My services</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Social media</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/dami%C3%A1n-ferreyra-b2453828a/"><i
+                                    class="fab fa-linkedin"> LI</i></a></li>
+                        <li><a href="https://twitter.com/DFKato"><i class="fab fa-twitter"> X</i></a></li>
+                        <li><a href="https://github.com/KatoDF"><i class="fab fa-github"> GH</i></a></li>
+                        <li><a href="https://discord.com/users/1088883078405038151"><i class="fab fa-discord">
+                                    Dc</i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Mail</h4>
+                    <ul>
+                        <li>
+                            <p class="footer-text">¡Copy-paste!</p>
+                        </li>
+                        <li><button class="button" id="Mail">ferreyradamian3755@gmail.com</p>
+                        </li>
+                        <li><a id="mailTo" href="mailto:ferreyradamian3755@gmail.com">Send mail</a></li>
+                </div>
+                <div class="container">
+                    <div class="message">
+                        <h4>Copyright ©2024; Designed by Damián Ferreyra</h4>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<audio id="clear_click" src="audio/clear_click.wav"></audio>
-<audio id="tech_click" src="audio/tech_click.wav"></audio>
-<script src="scripts.js"></script>
+    </footer>
+    <audio id="clear_click" src="audio/clear_click.wav"></audio>
+    <audio id="tech_click" src="audio/tech_click.wav"></audio>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
