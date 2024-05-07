@@ -12,7 +12,7 @@ header {
     width: auto;
     flex: auto;
     flex-wrap: auto;
-    background-color: #bbb;
+    background-color: #F8F6E3;
     padding: 20px 0px 20px 0px;
 }
 
@@ -21,7 +21,7 @@ header {
 }
 
 .headerg i {
-    color:#00c3ff
+    color: #00c3ff
 }
 
 .dark .support a {
@@ -29,7 +29,7 @@ header {
 }
 
 .dark {
-    color:white;
+    color: white;
     background-color: rgb(10, 10, 10);
 }
 
@@ -47,7 +47,12 @@ body {
     transition: background 0.5s linear;
 }
 
-body h1, h2, h3, h4, h5, h6 {
+body h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding-top: 3px;
     padding-bottom: 3px;
 }
@@ -88,7 +93,8 @@ body h1, h2, h3, h4, h5, h6 {
     border-radius: 12px;
 }
 
-#lang ul li:hover > ul, ul li ul:hover {
+#lang ul li:hover>ul,
+ul li ul:hover {
     visibility: visible;
     opacity: 1;
     display: block;
@@ -107,18 +113,18 @@ body h1, h2, h3, h4, h5, h6 {
 }
 
 #lang ul li ul li a:hover {
-padding-left: 10px;
-border-left: 2px solid black;
-transition: all 0.3s ease;
+    padding-left: 10px;
+    border-left: 2px solid black;
+    transition: all 0.3s ease;
 }
 
 #lang a {
 
-text-decoration: none;
+    text-decoration: none;
 
-&:hover {
-    color: #3CA0E7;
-}
+    &:hover {
+        color: #3CA0E7;
+    }
 
 }
 
@@ -126,22 +132,22 @@ text-decoration: none;
     font-size: 30px;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
-    background-color: white;
+    background-color: #F8F6E3;
 }
 
 .header-button a {
-    color:black;
+    color: #7AA2E3;
 }
 
 .header-buttong {
     font-size: 30px;
     padding: 5px 5px 5px 5px;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: #6AD4DD;
 }
 
 .header-buttong a {
-    color:white;
+    color: #F8F6E3;
 }
 
 
@@ -160,8 +166,8 @@ text-decoration: none;
     width: 100%
 }
 
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.content {
     padding-top: 102px;
 }
 
@@ -171,7 +177,7 @@ text-decoration: none;
 }
 
 .row p {
-    text-align:justify;
+    text-align: justify;
 }
 
 #background {
@@ -179,12 +185,12 @@ text-decoration: none;
 }
 
 .section {
-    background-color: whitesmoke;
+    background-color: #F8F6E3;
     padding: 15px 40px 15px 40px;
 }
 
 .section h2 {
-    text-align:center;
+    text-align: center;
     font-size: 32px;
 }
 
@@ -193,7 +199,7 @@ text-decoration: none;
 }
 
 .sectiongray h2 {
-    text-align:center;
+    text-align: center;
     font-size: 32px;
 }
 
@@ -203,7 +209,7 @@ text-decoration: none;
 }
 
 .column h4 {
-    font-size:20px;
+    font-size: 20px;
     padding-bottom: 5px;
 }
 
@@ -217,10 +223,10 @@ text-decoration: none;
 }
 
 .column_text {
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
     text-align: center;
-    width:100%
+    width: 100%
 }
 
 .column-33 {
@@ -229,13 +235,13 @@ text-decoration: none;
 }
 
 .column-33 h4 {
-    font-size:20px;
+    font-size: 20px;
     text-align: center;
 }
 
 .column-33 p {
     font-size: 16px;
-    text-align:center;
+    text-align: center;
 }
 
 
@@ -253,11 +259,12 @@ text-decoration: none;
 
 footer {
     color: black;
-    background-color: #dfdfdf;
+    background-color: #F8F6E3;
     padding-top: 35px;
 }
 
-footer p, a {
+footer p,
+a {
     color: black;
 }
 
@@ -266,7 +273,8 @@ footer p, a {
     background-color: black;
 }
 
-.footerg p, a {
+.footerg p,
+a {
     color: gray;
 }
 
@@ -293,10 +301,10 @@ footer p, a {
 .footer-links ul li a {
     font-size: 18px;
     text-decoration: none;
-    display:block;
+    display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
-    font-size:14px;
+    font-size: 14px;
 }
 
 .footer-links ul li a:hover {
@@ -330,6 +338,7 @@ footer p, a {
     .footer-row {
         text-align: center;
     }
+
     .footer-links {
         width: 100%;
         margin-bottom: 30px;
@@ -346,7 +355,7 @@ footer p, a {
 }
 
 #Mail {
-    text-transform:lowercase;
+    text-transform: lowercase;
     padding-bottom: 10px;
 }
 
@@ -397,14 +406,14 @@ footer p, a {
     transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .checkbox-label .ball {
+.checkbox:checked+.checkbox-label .ball {
     transform: translateX(30px);
 }
 
 .ldbutton {
     color: black;
     margin-left: 90%;
-    position:absolute;
+    position: absolute;
     padding-top: 0px;
 }
 
