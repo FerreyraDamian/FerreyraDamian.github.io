@@ -5,13 +5,12 @@ function copyText(htmlElement) {
     let elementText = htmlElement.innerText;
     let inputElement = document.createElement("input");
     inputElement.setAttribute("value", elementText);
-    document.body.appendChild(inputElement);
+    Document.body.appendChild(inputElement);
     inputElement.select();
-    document.execCommand("copy");
+    Document.execCommand("copy");
     inputElement.parentNode.removeChild(inputElement);
 }
 document.querySelector("#Mail").onclick = function() {
-    let mail="ferreyradamian3755@gmail.com"
     copyText(document.querySelector("#Mail"))
     alert("Mail copied to your clipboard")
 }    
@@ -27,7 +26,7 @@ var sticky = header.offsetTop;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
-    if (window.pageYOffset > sticky) {
+    if (window.scrollY > sticky) {
         header.classList.add("sticky");
     } else {
         header.classList.remove("sticky");
