@@ -1,427 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    box-sizing: border-box;
-}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-header {
-    text-align: center;
-    font-size: 30px;
-    width: auto;
-    flex: auto;
-    flex-wrap: auto;
-    background-color: #F8F6E3;
-    padding: 20px 0px 20px 0px;
-}
-
-.headerg {
-    background-color: black;
-}
-
-.headerg i {
-    color: #00c3ff
-}
-
-.dark .support a {
-    color: #fff;
-}
-
-.dark {
-    color: white;
-    background-color: rgb(10, 10, 10);
-}
-
-.dark p {
-    color: #bbb;
-}
-
-.sectiongray {
-    background-color: #000000;
-}
-
-body {
-    font-family: sans-serif;
-    color: black;
-    transition: background 0.5s linear;
-}
-
-body h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    padding-top: 3px;
-    padding-bottom: 3px;
-}
-
-#lang {
-    padding: 0px 0px 0px 0px;
-    float: left;
-}
-
-#lang ul li {
-    list-style: none;
-    margin: 0 auto;
-    border-left: 2px solid #3ca0e7;
+.ownicon-ts {
+    width: 30px;
+    height: 30px;
+    background: url(/images/typescript.svg);
     display: inline-block;
-    padding: 0 30px;
+    transform: translateY(3px);
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.ownicon-python {
+    width: 30px;
+    height: 30px;
+    background: url(/images/python.svg);
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.ownicon-java {
+    width: 30px;
+    height: 30px;
+    background: url(/images/java.svg);
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.ownicon-assembler {
+    width: 30px;
+    height: 30px;
+    background: url(/images/assembler.svg);
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.ownicon-mysql {
+    width: 30px;
+    height: 30px;
+    background: url(/images/mysql.svg);
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.ownicon-sqlite {
+    width: 30px;
+    height: 30px;
+    background: url(/images/sqlite.svg);
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+.fa-css3,
+.fa-html5,
+.fa-js,
+.fa-react {
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+
+/* Hover effects for all classes */
+.fa-css3:hover,
+.fa-html5:hover,
+.fa-js:hover,
+.fa-react:hover,
+.ownicon-ts:hover,
+.ownicon-python:hover,
+.ownicon-java:hover,
+.ownicon-assembler:hover,
+.ownicon-mysql:hover,
+.ownicon-sqlite:hover {
+    transform: scale(2.35);
     position: relative;
-    text-decoration: none;
-    text-align: center;
-    font-family: arvo;
+    z-index: 10;
 }
 
-#lang li a:hover {
-    color: #3ca0e7;
-}
-
-#lang li:hover {
-    cursor: pointer;
-}
-
-#lang ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    padding-left: 0;
-    left: 0;
-    display: none;
-    border: 3px #3ca0e7 solid;
-    border-radius: 12px;
-}
-
-#lang ul li:hover>ul,
-ul li ul:hover {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    min-width: 250px;
-    text-align: left;
-    padding-top: 20px;
-    box-shadow: 0px 3px 5px -1px #ccc;
-}
-
-#lang ul li ul li {
-    clear: both;
-    width: 100%;
-    text-align: left;
-    margin-bottom: 20px;
-    border-style: none;
-}
-
-#lang ul li ul li a:hover {
-    padding-left: 10px;
-    border-left: 2px solid black;
-    transition: all 0.3s ease;
-}
-
-#lang a {
-
-    text-decoration: none;
-
-    &:hover {
-        color: #3CA0E7;
-    }
-
-}
-
-.header-button {
-    font-size: 30px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    background-color: #F8F6E3;
-}
-
-.header-button a {
-    color: #7AA2E3;
-}
-
-.header-buttong {
-    font-size: 30px;
-    padding: 5px 5px 5px 5px;
-    border-radius: 10px;
-    background-color: #6AD4DD;
-}
-
-.header-buttong a {
-    color: #F8F6E3;
-}
-
-
-.header-button:hover {
-    cursor: pointer;
-}
-
-.header-hyperlink {
-    text-decoration: none;
-}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky+.content {
-    padding-top: 102px;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.row p {
-    text-align: justify;
-}
-
-#background {
-    padding: 0px 15% 0px 15%;
-}
-
-.section {
-    background-color: #F8F6E3;
-    padding: 15px 40px 15px 40px;
-}
-
-.section h2 {
-    text-align: center;
-    font-size: 32px;
-}
-
-.sectiongray {
-    padding: 15px 40px 15px 40px;
-}
-
-.sectiongray h2 {
-    text-align: center;
-    font-size: 32px;
-}
-
-.column {
-    padding: 5px 5px 5px 5px;
-    flex: 50%;
-}
-
-.column h4 {
-    font-size: 20px;
-    padding-bottom: 5px;
-}
-
-.column p {
-    font-size: 16px;
-}
-
-.column_img {
-    display: block;
-    margin: auto;
-}
-
-.column_text {
-    display: block;
-    margin: auto;
-    text-align: center;
-    width: 100%
-}
-
-.column-33 {
-    padding: 5px 5px 5px 5px;
-    flex: 33.3%
-}
-
-.column-33 h4 {
-    font-size: 20px;
-    text-align: center;
-}
-
-.column-33 p {
-    font-size: 16px;
-    text-align: center;
-}
-
-
-#wikimage {
-    border: 1px solid;
-    border-radius: 3px;
-    color: #cf15c0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    height: auto;
-}
-
-footer {
-    color: black;
-    background-color: #F8F6E3;
-    padding-top: 35px;
-}
-
-footer p,
-a {
-    color: black;
-}
-
-.footerg {
-    color: white;
-    background-color: black;
-}
-
-.footerg p,
-a {
-    color: gray;
-}
-
-
-.footer-row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    width: 25%;
-    padding: 0 15px;
-}
-
-.footer-links h4 {
-    font-size: 20px;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
-    padding-bottom: 10px;
-    display: inline-block;
-}
-
-.footer-links ul li a {
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 15px;
-    transition: all .3s ease;
-    font-size: 14px;
-}
-
-.footer-links ul li a:hover {
-    padding-left: 6px;
-}
-
-.footer-text {
-    padding-bottom: 6px;
-    display: inline-block;
-    margin-bottom: 6px;
-    font-size: 14px;
-}
-
-.social-link a {
-    display: inline-block;
-    min-height: 40px;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    transition: all .5s ease;
-}
-
-.social-link a:hover {
-    background-color: #00c3ff;
-    cursor: pointer;
-}
-
-@media(max-width:991px) {
-    .footer-row {
-        text-align: center;
-    }
-
-    .footer-links {
-        width: 100%;
-        margin-bottom: 30px;
-    }
-}
-
-.message h4 {
-    font-size: 15px;
-    margin-bottom: 25px;
-    font-weight: 500;
-    border-bottom: 2px solid #00c3ff;
-    padding-bottom: 10px;
-    text-align: center;
-}
-
-#Mail {
-    text-transform: lowercase;
-    padding-bottom: 10px;
-}
-
-.button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    padding: 1px 1px 1px 1px;
-}
-
-
-.button:hover {
-    cursor: pointer;
-    border: 1px solid #bbbbbb;
-    color: cornflowerblue;
-}
-
-#mailTo {
-    padding-top: 10px;
-}
-
-.checkbox {
-    opacity: 0;
-    position: absolute;
-}
-
-.checkbox-label {
-    width: 56px;
-    height: 25px;
-    border-radius: 25px;
-    position: relative;
-    padding: 0px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-}
-
-.checkbox-label .ball {
-    background-color: black;
-    width: 28px;
-    height: 28px;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    border-radius: 50%;
-    transition: transform 0.2s linear;
-}
-
-.checkbox:checked+.checkbox-label .ball {
-    transform: translateX(30px);
-}
-
-.ldbutton {
-    color: black;
-    margin-left: 90%;
-    position: absolute;
-    padding-top: 0px;
-}
-
-.hyperlink {
-    color: purple;
-}
-
-#sun {
-    font-size: 23px;
-    color: orange;
+.ownicon-mysql:hover {
+    transform: scale(3.25);
 }
