@@ -1,60 +1,60 @@
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif
+}
 
-.ownicon-ts {
+.ownicon-sqlite,
+.ownicon-mongodb,
+.ownicon-mysql,
+.ownicon-ts,
+.ownicon-assembler,
+.ownicon-java,
+.ownicon-python {
     width: 30px;
     height: 30px;
-    background: url(/images/typescript.svg);
     display: inline-block;
+}
+
+.ownicon-ts {
+    background: url(/images/typescript.svg);
     transform: translateY(3px);
 }
 
 .ownicon-python {
-    width: 30px;
-    height: 30px;
     background: url(/images/python.svg);
-    display: inline-block;
 }
 
 .ownicon-java {
-    width: 30px;
-    height: 30px;
     background: url(/images/java.svg);
-    display: inline-block;
 }
 
 .ownicon-assembler {
-    width: 30px;
-    height: 30px;
     background: url(/images/assembler.svg);
-    display: inline-block;
 }
 
 .ownicon-mysql {
-    width: 30px;
-    height: 30px;
     background: url(/images/mysql.svg);
-    display: inline-block;
 }
 
 .ownicon-sqlite {
-    width: 30px;
-    height: 30px;
     background: url(/images/sqlite.svg);
-    display: inline-block;
 }
 
 .ownicon-mongodb {
-    width: 30px;
-    height: 30px;
     background: url(/images/mongodb.svg);
-    display: inline-block;
 }
 
-/* Hover effects for all classes */
 .fa-css3:hover,
 .fa-html5:hover,
 .fa-js:hover,
 .fa-react:hover,
+.fa-node:hover,
 .ownicon-ts:hover,
 .ownicon-python:hover,
 .ownicon-java:hover,
@@ -65,7 +65,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
     transform: scale(2.35);
     position: relative;
     z-index: 10;
-    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease; 
+    transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease;
 }
 
 .ownicon-mysql:hover {
